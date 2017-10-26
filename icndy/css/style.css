@@ -1,0 +1,435 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url("../font/ProximaNova/Proxima Nova Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url("../font/ProximaNova/Proxima Nova Light.otf");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url("../font/ProximaNova/Proxima Nova Semibold.otf");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url("../font/ProximaNova/Proxima Nova Bold.otf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'ProximaNova';
+	font-weight: 500;
+}
+ul {
+	list-style: none;
+}
+img {
+	display: block;
+	width: 100%;
+}
+
+.center {
+	width: 88.2%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+/*			Header: ;				*/
+
+.header {
+	padding-top: 40px;
+	height: 100vh;
+
+	background: url("../img/background.png") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+.header .center {
+	height: 100vh;
+}
+
+.header__top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.menu__items {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 560px;
+	max-width: 560px;
+
+	justify-content: space-between;
+}
+
+.logo__link {
+	display: block;
+	width: 224px;
+	height: 90px;
+	transition: background 0.3s linear;
+
+	font-size: 40px;
+	line-height: 90px;
+	letter-spacing: 13px;
+	
+	color: #80807f;
+	background: #fff;
+}
+.logo__link:hover {
+	background: #f84545;
+}
+
+.menu__link {
+	font-size: 18px;
+	line-height: 90px;
+	color: #fff;
+	transition: color 0.3s linear;
+}
+.menu__link:hover {
+	color: #f84545;
+}
+
+.title {
+	font-family: 'ProximaNova';
+	font-size: 60px;
+	line-height: 70px;
+	letter-spacing: 25px;
+	font-weight: 300;
+
+	color: #fff;
+}
+.title b {
+	font-size: 30px;
+	line-height: 75px;
+	letter-spacing: 10px;
+
+	color: #f84545;
+}
+
+.anchor {
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	height: 120px;
+	transition: background 0.3s linear;
+	
+	border-radius: 50%;
+}
+.anchor:hover {
+	background: rgba(0,0,0,.8);
+}
+.anchor::before {
+	position: absolute;
+	content: "";
+	top: calc(50% - 10px);
+	right: calc(50% - 11px);
+	width: 70px;
+	height: 4px;
+	transform: rotate(45deg);
+
+	background: #fff;
+}
+.anchor::after {
+	position: absolute;
+	content: "";
+	top: calc(50% - 10px);
+	left: calc(50% - 11px);
+	width: 70px;
+	height: 4px;
+	transform: rotate(-45deg);
+
+	background: #fff;
+}
+
+
+
+/*				Brands 					*/
+
+.brands {
+	padding-top: 50px;
+}
+
+.brands__top,
+.brands__bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	text-align: center;	
+}
+
+.brands__top {
+	padding-bottom: 50px;
+
+	justify-content: space-between;
+}
+
+.brands__top__left {
+	width: 65%;
+	height: 100vh;
+	background: url("../img/gourmet.png") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.brands__top__left .brand__logo{
+	width: calc(50% - 70px);
+}	
+.brands__top__right {
+	width: 29.5%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+
+	justify-content: space-between;
+}
+
+.right__top {
+	height: 47vh;
+	background: url("../img/carhartt.png") no-repeat center;
+	background-size: cover;
+}
+.right__top .brand__logo {
+	width: calc(50% - 70px);
+}
+.right__bottom {
+	height: 47vh;
+	background: url("../img/adidas.png") no-repeat center;
+	background-size: cover;
+}
+
+.brand__block {
+	position: relative;
+	text-align: left;
+}
+.brand__info {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+}
+
+.brand__logo {
+	padding-bottom: 30px;
+	width: 50%;
+}
+
+.brand__description {
+	font-family: 'ProximaNova';
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+
+	color: #fff;
+}
+
+.brands__top__left .brand__description {
+	font-size: 60px;
+	padding-bottom: 20px;
+	line-height: 70px;
+}
+.brands__bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+	justify-content: space-between;
+}
+
+.brands__bottom .brand__block {
+	width: 29.5%;
+}
+
+.block-1 {
+	height: 60vh;
+	background: url("../img/10deep.png") no-repeat center;
+	background-size: cover;
+}
+.block-1 .brand__logo {
+	width: calc(50% + 40px);
+}
+.block-2 {
+	height: 60vh;
+	background: url("../img/palace.png") no-repeat center;
+	background-size: cover;
+}
+.block-2 .brand__logo {
+	width: 80px;
+}
+.block-3 {
+	height: 60vh;
+	background: url("../img/nike.png") no-repeat center;
+	background-size: cover;
+}
+
+
+
+/*				Instagram 					*/
+
+.instagram {
+	padding-top: 50px;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	text-align: center;
+
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.instagram__title {
+	position: absolute;
+	top: 45%;
+	left: calc(10% + 50px);
+	font-size: 3.5em;
+	line-height: 70px;
+	z-index: 2;
+	font-family: 'ProximaNova';
+	font-weight: 300;
+	letter-spacing: 15px;
+
+	color: #fff;
+}
+.instagram__title b {
+	font-size: 30px;
+
+	color: #f84545;
+}
+.instagram__photo {
+	width: 25%;
+}
+.filter {
+	position: absolute;
+	width: 25%;
+	height: 46.5%;
+	z-index: 1;
+
+	transition: opacity 0.3s linear;
+
+	opacity: 0.6;
+	background: #000;
+}
+
+.instagram__photo:hover .filter {
+	opacity: 0;
+	cursor: pointer;
+}
+
+
+/*				Footer 				*/
+
+.footer {
+	width: 88.2%;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.footer__links {
+	width: 60%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+}
+
+.footer__link {
+	font-size: 18px;
+	line-height: 40px;
+
+	color: #1a1a1a;	
+}
+.footer__link:hover {
+	color: #f84545;
+}
+
+.footer__social {
+	width: 40%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: flex-end;
+}
+
+.social__btn {
+	width: 40px;
+	height: 40px;
+	padding-right: 10px;
+	opacity: 0.6;
+}
+.social__btn:hover {
+	opacity: 1;
+}
+
+.in {
+	background: url("../img/social_sptire.png") no-repeat;
+}
+.fb {
+	background: url("../img/social_sptire.png") no-repeat;
+	background-position: -55px 0;  
+}
+.tw {
+	background: url("../img/social_sptire.png") no-repeat;
+	background-position: -110px 0;  
+}
