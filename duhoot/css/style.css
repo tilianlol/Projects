@@ -63,6 +63,13 @@ a {
 	color: #fff;
 }
 
+.line {
+	width: 76.6%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+
 /*					Header 					*/
 
 .wrapper {
@@ -76,6 +83,8 @@ a {
 
 	background: #fff;
 }
+
+/*					Header top  				*/
 .header__top {
 	margin-bottom: -1px;
 	width: 70%;
@@ -93,6 +102,8 @@ a {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+
+	transition: width 0.3s linear;
 }
 .header__menu {
 	display: -webkit-flex;
@@ -124,14 +135,6 @@ a {
 	color: #fff;
 	background: #e94e38;
 }
-/*
-.buttons {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-}*/
 
 .search {
 	display: block;
@@ -174,6 +177,7 @@ a {
 	background: #e94e38;
 }
 
+/* 						Header middle 					*/
 
 .header__middle {
 	position: relative;
@@ -283,17 +287,23 @@ a {
 	border-bottom: 4px solid #c1412e;
 }
 
+
+/*						Header Search 						*/
+
 .header__search {
 	background: #fff;
 }
 .search__wrap {
 	width: 76.56%;
 	margin: 0 auto;
+
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+
+	transition: width 0.5s linear;
 }
 .search__words,
 .search__filters {
@@ -306,8 +316,8 @@ a {
 	justify-content: space-between;
 }
 .search__words {
-	margin-right: 60px;
-	width: 33%;
+	margin-right: 30px;
+	width: 40%;
 }
 
 .search__map {
@@ -329,6 +339,8 @@ a {
 }
 .search__map .map--input {
 	width: 110px;
+
+	background: rgba(255,255,255,.1) url("../img/arrow-grey.png") no-repeat right 20px center;
 }
 .map__btn {
 	cursor: pointer;
@@ -409,6 +421,9 @@ a {
 
 
 
+/*									MAIN 									*/
+
+
 .main {
 	padding-top: 50px;
 	padding-bottom: 35px;
@@ -440,34 +455,24 @@ a {
 	background: #fff;
 	box-shadow: 0px 1px 0px #ccc;
 }
+.main__block__bg {
+	width: 48%;
+	padding-bottom: 15px;
+	margin-bottom: 35px;
+
+	text-align: center;
+	
+	background: #fff;
+	box-shadow: 0px 1px 0px #ccc;
+}
+
 .main__block__img {
 	width: 100%;
 	height: 50vh;
 }
-.line--green {
-	border-bottom: 3px solid #1baf5d;
-}
-.line--orange {
-	border-bottom: 3px solid #f19e1f;
-} 
-.line--purpule {
-	border-bottom: 3px solid #88499c;
-} 
 .block__img .main__block__img {
 	width: 100%;
 	height: 22vh;
-}
-
-.block__img {
-	position: relative;
-}
-.block__img .filters {
-	position: absolute;
-
-	bottom: calc(-10% - 5px);
-	left: calc(50% - 20px);
-
-	border: 2px solid white;
 }
 
 .main__block__title {
@@ -491,10 +496,31 @@ a {
 
 	color: #1baf5d;
 }
-.main__block {
+.main__block__stars {
 	font-size: 12px;
 
 	color: #96a6a7;
+}
+
+.line--green {
+	border-bottom: 3px solid #1baf5d;
+}
+.line--orange {
+	border-bottom: 3px solid #f19e1f;
+} 
+.line--purpule {
+	border-bottom: 3px solid #88499c;
+} 
+.block__img {
+	position: relative;
+}
+.block__img .filters {
+	position: absolute;
+
+	bottom: calc(-10% - 5px);
+	left: calc(50% - 20px);
+
+	border: 2px solid white;
 }
 .fa-star,
 .fa-star-o {
@@ -506,16 +532,6 @@ a {
 
 	bottom: -10%;
 	left: calc(10% - 20px);
-}
-.main__block__bg {
-	width: 48%;
-	padding-bottom: 15px;
-	margin-bottom: 35px;
-
-	text-align: center;
-	
-	background: #fff;
-	box-shadow: 0px 1px 0px #ccc;
 }
 
 .block__img__info {
@@ -549,6 +565,8 @@ a {
 
 	font-size: 20px;
 }
+
+
 .main__block__post {
 	padding-top: 10px;
 	padding-left: 20px;
@@ -598,11 +616,8 @@ a {
 }
 
 
-.line {
-	width: 76.6%;
-	margin: 0 auto;
-	margin-bottom: 70px;
-}
+
+/*							Offer 							*/
 
 .offer {
 	width: 68%;
@@ -610,11 +625,51 @@ a {
 }
 
 .offer__info {
+	padding-top: 50px;
+
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+
+	justify-content: space-between;
+}
+
+.offer__title {
+	font-size: 22px;
+	line-height: 40px;
+
+	color: #566375;
+}
+.offer__description {
+	font-family: 'GothamBook';
+	font-size: 16px;
+
+	color: #96a6a7;
+}
+
+.offer__buttons {
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+
+.title--sm {
+	font-family: 'GothamMedium';
+	font-size: 24px;
+
+	color: #1baf5d;
+}
+
+.info__block {
+	width: 45%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	text-align: left;
 }
 
 .offer__btn {
@@ -676,53 +731,6 @@ a {
 	background: #1baf5d;
 }
 
-.offer__title {
-	font-size: 22px;
-	line-height: 40px;
-
-	color: #566375;
-}
-.offer__description {
-	font-family: 'GothamBook';
-	font-size: 16px;
-
-	color: #96a6a7;
-}
-
-.offer__buttons {
-	padding-top: 70px;
-	padding-bottom: 40px;
-}
-
-.title--sm {
-	font-family: 'GothamMedium';
-	font-size: 24px;
-
-	color: #1baf5d;
-}
-
-.offer__info {
-	padding-top: 50px;
-
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-
-	justify-content: space-between;
-}
-
-.info__block {
-	width: 45%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-
-	text-align: left;
-}
 
 .btn--sm i {
 	font-size: 25px;
@@ -738,6 +746,9 @@ a {
 	color: #566375;
 }
 
+
+
+/*							FOOTER 							*/
 
 .footer {
 	padding-top: 70px;
@@ -850,4 +861,84 @@ a {
 }
 .follow__links {
 	margin-top: -50px;
+}
+
+
+
+
+@media screen and ( max-width: 1270px ) {
+
+	.search__wrap {
+		width: 100%;	
+
+		justify-content: space-between;
+	}
+
+} 
+
+@media screen and ( max-width: 1060px ) { 
+
+	.header__top {
+		width: 100%;
+	}	
+
+	.search__words {
+		width: 30%;
+		margin-right: 0;
+	}
+	.words__link {
+		font-size: 14px;
+	}
+
+	.search__map {
+		width: 30%;
+	}
+}
+
+
+@media screen and ( max-width: 890px ) { 
+	.header__top {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.header__logo {
+		align-self: center;
+	}
+	.header__menu {
+		text-align: center;
+		display: block;
+	}
+	.search {
+		align-self: flex-end;
+	}
+	.login {
+		-ms-align-self: flex-end;
+		align-self: flex-end;
+	}
+
+	.search__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.search__words,
+	.search__map,
+	.search__filters {
+		width: 50%;
+		margin: 0 auto;
+
+		text-align: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-around;
+	}
+
 }
