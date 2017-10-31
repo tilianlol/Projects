@@ -941,4 +941,17 @@ a {
 		justify-content: space-around;
 	}
 
+	.main {
+		width: 100%;
+
+		justify-content: space-around;
+	}
+
+	.main__block__sm {
+		width: 45%;
+	}
+	.main__block__bg {
+		width: 95%;
+	}
+
 }
