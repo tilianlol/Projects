@@ -1,0 +1,43 @@
+/*-------------------------Advantage------------------------------*/
+.advantage {
+	padding-top: 55px;
+	padding-bottom: 75px;
+
+	text-align: center;
+
+	background: $pink;
+
+// Заголовок
+	.title {
+		padding-bottom: 65px;
+	}
+
+// Обёртка блоков
+	.advantage__info {
+		justify-content: space-between;
+		padding-bottom: 65px;
+	}
+	// Блок контента
+	.info__block {
+		width: 28%;
+	}
+	// Блок картинки
+	.info__figure {
+		display: inline-block;
+		height: 270px;
+		width: 270px;
+
+		box-sizing: border-box;
+
+		background: #fff;
+		border-radius: 50%;
+	}
+	// Картинка социальных сетей
+	.figure__social {
+		padding-top: 30px;
+	}
+	// Заголовок
+	.title--sm {
+		padding: 20px 0;
+	}
+}

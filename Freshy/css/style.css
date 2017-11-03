@@ -1,0 +1,497 @@
+/*.test {
+	background-color: #2eb2ef;
+}
+img {
+	opacity: 0.5;
+}
+img:hover {
+	opacity: 1;
+}*/
+
+/*
+00a1eb - синий свет для кнопок и заголовков
+a1a1a1 - серый цвет линии
+737373 - серый цвет текста
+2b2b2b - черный цвет футера
+
+
+ */
+/*-----------Подключение нестандартных шрифтов----------------*/
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/montserrat/Montserrat-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/montserrat/Montserrat-Bold.otf");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/montserrat/Montserrat-ExtraLight.otf");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hind';
+	src: url("../fonts/hind/Hind-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Hind';
+	src: url("../fonts/hind/Hind-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*------------------------------------------------------------*/
+
+/*---------------------Основные стили-------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	text-decoration: none;
+
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+
+	color: #737373;
+}
+
+a {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+
+	color: #fff;
+}
+
+
+.center {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.clear::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.white {
+	color: #fff;
+}
+
+.description {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Hind', sans-serif;
+}
+
+.btn {
+	padding: 15px 20px;
+	max-width: 150px;
+
+	cursor: pointer;
+
+	text-transform: uppercase;
+
+	font-size: 14px;
+	line-height: 15px;
+	font-weight: 700;
+
+	border: none;
+	border-radius: 5px;
+}
+
+.btn-blue {
+	color: #fff;
+	background-color: #00a1eb;
+}
+.btn:hover {
+	opacity: 0.8;
+	color: #000;
+}
+
+.btn-white {
+	color: #00a1eb;
+	background-color: #fff;
+}
+
+.title {
+	font-size: 34.17px;
+	font-weight: 700;
+
+	color: #00a1eb;
+}
+
+/*-------------------ХЭДЕР------------------*/
+
+.header {
+	padding-top: 40px;
+	padding-bottom: 230px;
+	background: url("../img/head.png") no-repeat;
+	background-size: cover;
+}
+
+
+.header__top {
+	margin-bottom: 206px;
+}
+
+.header__logo {
+	float: left;
+}
+.logo {
+	vertical-align: middle;
+	font-size: 25px;
+}
+.logo:hover {
+	border-bottom: 1px solid #fff;
+}
+.logo-center {
+	font-weight: normal;
+}
+.logo-end {
+	font-weight: 100;
+}
+
+.header__menu {
+	float: right;
+}
+.menu__block {
+	float: left;
+	margin-right: 20px;
+}
+.menu__link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.header__phone {
+	float: right;
+	padding: 0 15px;
+	margin-top: -8px;
+
+	line-height: 40px;
+}
+.header__phone:hover .phone__link {
+	border-bottom: 1px solid #fff;
+}
+.header__phone:hover {
+
+	border-radius: 5px;
+	background-color: #00a1eb;
+}
+
+.header__title {
+	font-size: 78.74px;
+	font-weight: 700;
+	letter-spacing: 17px;
+
+	color: #fff;
+}
+
+.header__description {
+	font-family: 'Hind', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 4px;
+
+	color: #fff;
+}
+
+
+
+/*---------------------О НАС-----------------*/
+
+
+.about {
+	margin-top: 130px;
+
+	text-align: left;
+}
+
+.about__left {
+	float: left;
+	width: 45%;
+}
+
+.about__title {
+	margin-bottom: 25px;
+}
+
+.line {
+	width: 80px;
+	margin-bottom: 25px;
+	
+	border: none;
+	border-bottom: 1px solid #a1a1a1;
+}
+
+.about__description {
+	margin-bottom: 25px;
+}
+
+.about__tel {
+	margin-bottom: 30px;
+
+	font-size: 22px;
+	line-height: 21px;
+	font-weight: 700;
+
+	color: #00a1eb;
+}
+
+.about__right {
+	float: right;
+	position: relative;
+	width: 45%;
+}
+
+.about__img-title {
+	position: absolute;
+
+	top: 85%;
+	left: 72%;
+
+	font-size: 22px;
+	line-height: 21px;
+	font-weight: 700;
+
+	color: #fff;
+}
+
+
+/*------------------АСОРТИМЕНТ-----------------*/
+
+
+.asortyment {
+	margin-top: 160px;
+}
+
+.asortyment__title {
+	margin-bottom: 25px;
+}
+
+.asortyment__line {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.asortyment__description {
+	padding: 0 250px;
+	padding-bottom: 50px;
+}
+
+.asortyment__item {
+	float: left;
+	width: 270px;
+	height: 270px;
+	margin-right: 30px;
+	margin-bottom: 55px;
+}
+
+.asortyment__item1 {
+	background: url("../img/asort-1.png") no-repeat center;
+}
+.asortyment__item2 {
+	background: url("../img/asort-2.png") no-repeat center;
+}
+.asortyment__item3 {
+	background: url("../img/asort-3.png") no-repeat center;
+}
+.asortyment__item4 {
+	margin-right: 0;
+
+	background: url("../img/asort-4.png") no-repeat center;
+}
+
+.item__title {
+	margin-top: 120px;
+
+	font-size: 20px;
+	font-weight: 700;
+
+	color: #fff;	
+}
+
+.item__price {
+	padding-bottom: 10px;
+
+	font-size: 24px;
+	font-weight: 400;
+
+	color: #fff;
+}
+
+.btn-zamov {
+	display: none;
+	padding: 12px 20px;
+}
+
+.asortyment__item:hover .item__title {
+	margin-top: 90px;
+}
+.asortyment__item:hover .btn-zamov {
+	display: inline;
+	text-align: center;
+}
+
+
+
+/*------------------ВОЗМОЖНОСТИ----------------*/
+
+
+.abillity {
+	margin-top: 185px;
+}
+
+.abillity__items {
+	margin-bottom: 70px;
+}
+
+.abillity__item {
+	float: left;
+	max-width: 370px;
+	margin-right: 25px;
+}
+.abillity__item:last-child {
+	margin-right: 0;
+}
+
+.abillity__ico {
+	margin: 0 auto;
+	width: 160px;
+	height: 160px;
+	margin-bottom: 30px;
+
+	border-radius: 50%;
+	border: 2px solid #00a1eb;
+}
+.abillity__ico-1 {
+	background: url("../img/002-pan.png") no-repeat center;
+	background-position: 60% 45%;
+}
+
+.abillity__ico-2 {
+	background: #00a1eb url("../img/003-fish.png") no-repeat center;
+	background-position: 60% 45%;
+}
+
+.abillity__ico-3 {
+	background: #00a1eb url("../img/001-shrimp.png") no-repeat center;
+	
+}
+
+.abillity__title {
+	margin-bottom: 25px;
+}
+
+.abillity__line {
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+
+
+
+/*----------------КОНТАКТЫ-----------------*/
+
+
+.contact {
+	margin-top: 95px;
+
+	text-align: right;
+
+	color: #fff;
+	background-color: #00a1eb;
+}
+
+.contact__map {
+	float: left;
+	margin-bottom: -5px;
+	width: 45%;
+}
+.map {
+	opacity: .5;
+}
+.map:hover {
+	opacity: 1;
+}
+
+.contact__info {
+	float: right;
+	margin-right: 40px;
+	margin-top: 150px;
+	width: 45%;
+}
+.contact__title {
+	margin-bottom: 30px;
+
+	color: #fff;
+}
+.contact__line {
+	margin: 0 0 30px auto;
+
+	border-color: #fff;
+}
+.contact__description {
+	margin-bottom: 30px;
+}
+
+
+
+/*--------------------ИНФОРМАЦИЯ----------------*/
+
+
+.info {
+	margin-top: 60px;
+	padding-bottom: 100px;
+
+	text-align: left;
+}
+
+.info__block {
+	float: left;
+	width: 25%;
+}
+.info__title {
+	margin-bottom: 25px;
+}
+.info__text {
+	font-family: 'Hind', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
+
+/*--------------------ФУТЕР----------------------*/
+
+.footer {
+	padding: 55px 0;
+	background-color: #2b2b2b;
+
+	color: #c6c6c6;
+}
+
+.footer__copyright {
+	float: left;
+}
+.footer__what {
+	float: right;
+}

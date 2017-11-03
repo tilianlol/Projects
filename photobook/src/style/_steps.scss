@@ -1,0 +1,52 @@
+/*-------------------------Steps------------------------------*/
+.steps {
+	padding-top: 55px;
+	padding-bottom: 95px;
+
+	justify-content: space-around;
+	
+	// Блок шаг
+	.steps__step {
+		width: 25%;
+
+		.step--4::after {
+			display: none;
+		}
+	}
+
+	// Окружность
+	.step__circle {
+		position: relative;
+		display: inline-block;
+		width: 130px;
+		height: 130px;
+		margin-bottom: 25px;
+
+		z-index: 1;
+
+		border-radius: 50%;
+		border: 5px solid $yellow;
+
+
+		&::after {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 120px;
+
+			z-index: -1;
+
+			top: 50%;
+			right: -100%;
+
+			border: 3px dashed $yellow;
+		}
+	}
+	
+	// Картинки в окружности
+	@for $i from 1 through 4 {
+		.step--#{$i} {
+			background: #fff url('../img/step--#{$i}.svg') center no-repeat;
+		}
+	}
+}

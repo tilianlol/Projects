@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotoBook</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+//= template/header.html
+
+//= template/banner.html
+
+//= template/steps.html
+
+//= template/advantage.html
+
+//= template/solution.html
+
+//= template/testimonials.html
+
+//= template/terms.html
+
+//= template/footer.html
+
+
+<script>
+	
+	(function(){
+
+		let btn = document.querySelector('.menu__btn');
+		let header__menu = document.querySelector('.header__menu');
+		let logo = document.querySelector('.header__logo');
+
+		btn.onclick = function(){
+			header__menu.classList.toggle("show");
+			logo.classList.toggle("hide");
+		};
+
+	}())
+
+</script>
+
+</body>
+</html>

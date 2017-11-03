@@ -1,0 +1,70 @@
+/*-------------------------Testimonials------------------------------*/
+
+.testimonials {
+	padding-top: 35px;
+	padding-bottom: 50px;
+	
+	text-align: left;
+
+	background: url('../img/testimonials.png') center no-repeat;
+	
+	// Центровщик
+	.center {
+		flex-direction: column;
+
+		text-align: left;
+		
+		// Обёртка
+		.wrapper {
+			width: 50%;
+		}
+	}
+	
+	// Заголовок
+	.title {
+		padding-bottom: 50px;
+	}
+
+	// Блок автора 
+	.testimonials__author {
+		display: flex;
+		padding-bottom: 25px;
+
+		text-align: left;
+		
+		// Об авторе
+		.title--sm {
+			padding-top: 21%;
+			padding-left: 30px;
+
+			font-size: 18px;
+			font-weight: 300;
+			
+			// Имя
+			b {
+				font-size: 30px;
+				font-weight: 300;
+			}
+		}
+	}
+	
+	// Контент статьи
+	.testimonials__content {
+		padding-bottom: 100px;
+	}
+	
+	// Блок ссылки на полную статью
+	.content__more {
+		padding-top: 20px;
+
+		text-align: right;
+		
+		// Ссылка на полную статью
+		.title--sm {
+			font-size: 16px;
+			font-weight: 200;
+
+			color: #000;
+		}
+	}
+}

@@ -1,0 +1,113 @@
+/*-------------------------Header------------------------------*/
+
+// Обёртка
+.header__wrapper {
+	width: (1230/1520) * 100%;
+	margin: 0 auto;
+	padding: 20px 0;
+
+	display: flex;
+	justify-content: space-between;
+	
+ // Основные блоки
+	.header__block,
+	.header__navigation,
+	.header__menu {
+		display: flex;
+	}
+	.header__menu {
+		width: 0;
+		margin-right: 20px;
+		
+		overflow: hidden;
+		
+		transition: all 0.5s linear;
+
+		.menu__items {
+			display: inline-block;
+
+			.menu__link {
+				display: block;
+				padding: 10px;
+
+				color: #000;
+				border-bottom: 2px solid #fff; 
+
+				&:hover {
+					border-bottom: 2px solid $yellow; 
+				}
+			}
+		}
+	}
+	// Кнопка меню
+	.menu__btn {
+		position: relative;
+		width: 25px;
+		height: 18px;
+		margin-right: 65px;
+		margin-top: 10px;
+
+		background: none;
+		border: none;
+
+		span {
+			position: absolute;
+			display: block;
+			width: 25px;
+			height: 2px;
+
+			left: 0;
+
+			background: #000;
+
+			&:nth-child(1n) {
+				top: 0;
+			}
+			&:nth-child(2n) {
+				top: 8px;
+			}
+			&:nth-child(3n) {
+				top: 16px;
+			}
+		}
+	}
+	// Логотип
+	.header__logo {
+		padding-top: 10px;
+
+		transition: all 0.6s linear;
+	}
+	// Блок номера
+	.header__number {
+		display: inline-block;
+		padding: 0px 35px;
+
+		font-size: 16px;
+		line-height: 36px;
+		text-decoration-line: underline;
+  	text-decoration-style: dashed;
+
+		transition: all 0.5s linear;
+		
+		border-radius: 10px;
+		color: $black;
+		background: $yellow;
+
+		&:hover {
+			background: $red;
+		}
+	}
+	// Кнопка входа
+	.header__login {
+		display: inline-block;
+		padding-top: 5px;
+		margin-left: 50px;
+
+		transition: all 0.3s linear;
+
+		&:hover {
+			border-radius: 3px;
+			background: $yellow;
+		}
+	}
+}
