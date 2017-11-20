@@ -1,0 +1,98 @@
+//--------------------------Соц. Сети-------------------------------
+.social {
+	padding-top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	
+	// Раздел
+	.instagram {
+		position: absolute;
+
+		top: -80px;
+		left: 0;
+
+		z-index: -5;
+
+		font-family: Montserat;
+		text-transform: uppercase;
+		font-size: 85px;
+
+		color: #f7f7f7;
+	}
+
+// Инстаграм
+	&__instagram {
+		position: relative;
+		width: 40%;
+		display: flex;
+		flex-wrap: wrap;
+		padding-right: 20px;
+
+		z-index: 5;
+
+// Обёртка ссылки
+	&__wrapper {
+		width: 100%;
+		padding: 20px;
+		display: flex;
+		width: 100%;
+
+		background: #fff;
+
+	// Картинка инстаграма
+		&__img {
+			width: 30px;
+			height: 30px;
+			padding-right: 10px;
+		}
+	}
+
+	// Фото
+		&__img {
+			width: 50%;
+			height: 250px;
+
+			cursor: pointer;
+
+			&:hover {
+				filter: blur(2px);
+			}
+		}
+	// Ссылка
+		&__link {
+			display: flex;
+			align-self: center;
+
+			font-size: 16px;
+			font-family: Montserat;
+			vertical-align: middle;
+
+			color: #000;
+			background: #fff;
+		// Фолоу
+			b {
+				padding-right: 15px;
+
+				font-size: 24px;
+				text-transform: uppercase;
+
+				color: $blue;
+			}
+		// *Фолоу
+		}
+	// *Ссылка
+	}
+// Инстаграм
+
+// Фейсбук
+	&__facebook {
+		height: 300px;
+		padding-top: 50px;
+		align-self: flex-start;
+
+		border: 1px solid black;
+	}
+}
+//**************************Соц. Сети***********************************

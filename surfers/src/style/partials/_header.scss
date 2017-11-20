@@ -1,0 +1,272 @@
+//--------------------------Хедер-------------------------------
+.header {
+	position: relative;
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 150px;
+	flex-direction: column;
+
+	box-sizing: border-box;
+
+	text-align: center;
+
+	background: url("../img/header.png") no-repeat top;
+
+// Логотип и навигация
+	&__top {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+
+		justify-content: space-between;
+		align-items: center;
+
+	// Меню
+		.header__menu {
+			display: flex;
+
+		// Элемент списка
+			&__item {
+				display: inline-block;
+			}
+		// Ссылка
+			&__link {
+				display: block;
+				padding: 7px 13px;
+
+				transition: background .3s linear;
+
+				text-transform: uppercase;
+
+				color: #000;
+
+				&:hover {
+					color: #fff;
+					background: $blue;
+				}
+			}
+		// *Ссылка
+		}			
+	// *Меню
+	}
+// *Логотип и навигация
+
+// Заголовок
+	&__middle {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+	// Заголовок большой
+		.title--it {
+			font-size: 50px;
+		}
+	// *Заголовок большой
+
+	// Заголовок маленький
+		.title--sm {
+			font-size: 24px;
+
+			color: #fff;
+		}
+	// *Заголовок маленький
+	}
+// *Заголовок
+
+// Товар
+	&__bottom {
+		position: relative;
+		display: flex;
+		width: 70%;
+		margin: 0 auto;
+
+		justify-content: space-around;
+		box-sizing: border-box;
+
+		text-align: left;
+
+		background: #fff;
+		box-shadow: 0 0 20px 1px #222; 
+
+	// Раздел
+	.boards {
+		position: absolute;
+		transform: rotate(-90deg);
+
+		bottom: 32%;
+		right: -21%;
+
+		z-index: 1;
+
+		font-size: 145px;
+
+		color: #f7f7f7;
+	}
+
+	// Позиция товара 
+		&__slider {
+			position: absolute;
+			right: -30px;
+			top: 50px;
+
+			z-index: 10;
+		// Кнопки
+			&__btns {
+				display: flex;
+			}
+		// Кнопка
+			.btn--slider {
+				padding: 5px;
+
+				font-size: 20px;
+
+				cursor: pointer;
+				
+				color: #fff;
+				border: none;
+				background: $yellow;
+
+				&:hover {
+					background: $blue;
+				}	
+			}
+		// *Кнопка
+
+		// Страница
+			.slider__page {
+				position: absolute;
+				padding: 5px;
+
+				right: 30px;
+
+				text-align: center;
+
+				color: #fff;
+				background: #000;
+			}
+		// *Страница
+		}
+	// *Позиция товара 
+
+	// Большая картинка
+		&__picture {
+			width: 43%;
+			align-self: center;
+		}
+		.image--active {
+			width: 68px;
+			border: 2px solid $blue;
+		}
+	// Маленькие картинки
+		&__images {
+			width: 10%;
+			align-self: center;
+		// Картинка
+			img {
+				width: 70px;
+				margin-bottom: 4px;
+
+				border: 1px solid $grey;
+			// Наведение
+				&:hover {
+					width: 68px;
+					border: 2px solid $blue;
+				}
+			// *Наведение
+			}
+		// *Картинка
+		}
+	// *Маленькие картинки
+
+	// Описание
+		&__description {
+			width: 43%;
+			padding-right: 20px;
+
+			z-index: 5;
+		// Название товара
+			.title--sm {
+				padding-top: 40px;
+				padding-bottom: 45px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+		// Линияx
+		// Табы описания
+			&__titles {
+				display: flex;
+			// Заголовки табов
+				.title--nm {
+					margin-bottom: 22px;
+					padding-right: 25px;
+
+					cursor: pointer;
+
+					transition: all 0.3s;
+
+					border-bottom: 2px solid #ccc;
+
+					&:hover {
+						border-bottom-color: $blue;
+					}
+
+					a {
+						color: #000;
+					}
+				}
+				.tab--active {
+					border-bottom-color: $blue;
+				}
+			// Покупка
+				&__buy {
+					display: flex;
+					padding-top: 35px;
+					padding-bottom: 60px;
+				// Цена
+					.title {
+						padding-right: 25px;
+					}
+				// *Цена
+				}
+			// *Покупка
+			}
+		// *Табы описания
+		}
+	// *Описание
+	}
+// *Товар
+
+// Социальные сети
+	.social__link {
+		display: inline-block;
+		margin-right: 5px;
+		width: 35px;
+		height: 35px;
+
+		line-height: 37px;
+
+		transition: background .3s linear;
+
+		border-radius: 50%;
+	// Иконки социальных сетей
+		@for $i from 1 through 3{
+			&:nth-child(#{$i}) {
+				background: #000 url('../img/social-#{$i}.png') center no-repeat;
+
+				&:hover {
+					background: #fff url('../img/social-#{$i}-b.png') center no-repeat;
+				}
+			}
+		}
+	// *Иконки социальных сетей
+	}
+	h2 {
+		font-size: 20px;
+		font-weight: 400;
+	}
+	h3{
+		font-family: Montserat;
+	}
+// *Социальные сети
+}
+//*****************************Хедер***********************************

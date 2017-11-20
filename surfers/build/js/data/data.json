@@ -1,0 +1,38 @@
+[
+	{
+		"img__bg":"../../img/board.png",
+		"img__sm_1":"../../img/b-1.png",
+		"img__sm_2":"../../img/b-2.png",
+		"img__sm_3":"../../img/b-3.png",
+		"img__sm_4":"../../img/b-4.png",
+		"title":"JR Surfboards The Donny Stoker Yellow/Green Rail Fade",
+		"description":"Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.",
+		"feature":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aspernatur doloribus corporis dolores tempora sed, quas nihil quos quisquam maiores reiciendis sunt consequuntur ab, pariatur, deserunt earum totam cum aut amet at? Natus labore, porro quos deleniti! Ratione, illum, eveniet?",
+		"dimension":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident cum veniam consectetur, voluptas eius quasi dicta dolorum vitae ab vel cupiditate earum architecto voluptatibus blanditiis maxime porro dolores numquam similique iste cumque minus sit reiciendis! Perferendis nam adipisci molestiae explicabo cum, suscipit, doloribus neque..",
+		"price":"$49.99"
+	},
+	{
+		"img__bg":"../../img/b-1.png",
+		"img__sm_1":"../../img/b-1.png",
+		"img__sm_2":"../../img/b-2.png",
+		"img__sm_3":"../../img/b-3.png",
+		"img__sm_4":"../../img/b-4.png",
+		"title":"Surfboards Blue/Black",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, pariatur! Nostrum temporibus, nesciunt praesentium voluptates magni vel distinctio soluta ea quasi, facere aut fuga? Placeat earum in, labore vitae veritatis quod ex ratione sequi sint hic minima possimus odit corrupti quis eos amet velit minus numquam tenetur quaerat. Quam, perferendis.",
+		"feature":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aspernatur doloribus corporis dolores tempora sed, quas nihil quos quisquam maiores reiciendis sunt consequuntur ab, pariatur, deserunt earum totam cum aut amet at? Natus labore, porro quos deleniti! Ratione, illum, eveniet?",
+		"dimension":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident cum veniam consectetur, voluptas eius quasi dicta dolorum vitae ab vel cupiditate earum architecto voluptatibus blanditiis maxime porro dolores numquam similique iste cumque minus sit reiciendis! Perferendis nam adipisci molestiae explicabo cum, suscipit, doloribus neque..",
+		"price":"$29.99"
+	},
+	{
+		"img__bg":"../../img/b-2.png",
+		"img__sm_1":"../../img/b-1.png",
+		"img__sm_2":"../../img/b-2.png",
+		"img__sm_3":"../../img/b-3.png",
+		"img__sm_4":"../../img/b-4.png",
+		"title":"Surfboards Pink/Metal",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe doloribus quibusdam, quia, autem dolor delectus illo necessitatibus accusantium accusamus, quam pariatur quaerat, error dicta suscipit est dolorem animi! Ipsam optio molestias eveniet consequuntur porro, temporibus perspiciatis eius odio. Deleniti.",
+		"feature":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aspernatur doloribus corporis dolores tempora sed, quas nihil quos quisquam maiores reiciendis sunt consequuntur ab, pariatur, deserunt earum totam cum aut amet at? Natus labore, porro quos deleniti! Ratione, illum, eveniet?",
+		"dimension":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident cum veniam consectetur, voluptas eius quasi dicta dolorum vitae ab vel cupiditate earum architecto voluptatibus blanditiis maxime porro dolores numquam similique iste cumque minus sit reiciendis! Perferendis nam adipisci molestiae explicabo cum, suscipit, doloribus neque..",
+		"price":"$89.99"
+	}
+]

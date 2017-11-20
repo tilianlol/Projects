@@ -1,0 +1,51 @@
+//--------------------------Обновления-------------------------------
+.updates {
+	padding-top: 150px;
+
+	text-align: center;
+
+// Раздел
+	.title--sm {
+		padding-bottom: 20px;
+	}
+
+// Новости
+	&__news {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 50px;
+	
+	// Новость
+		&__block {
+			width: 20%;
+			margin-right: 20px;
+
+			text-align: left;
+
+			&:hover {
+				background: #fff;
+				box-shadow: 0 0 20px 1px #ccc;
+
+				.updates__news__block--text  {
+					color: $blue-dk;
+				}
+			}
+		
+		// Текст новости
+			&--text {
+				display: inline-block;
+				padding: 22px;
+
+				font-family: Montserat;
+				font-size: 16px;
+				line-height: 24px;
+
+				color: #787878;
+			}
+		// *Текст новости
+		}
+	// *Новость
+	}
+// *Новости
+}
+//*****************************Обновления***********************************

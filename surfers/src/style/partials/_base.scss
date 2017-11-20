@@ -1,0 +1,107 @@
+// Цвета
+$blue			: #00d2ff;
+$blue-dk	: #0022ff;
+$yellow		: #f2d800;
+$grey			: #9b9b9b;
+
+// Обнуление отступов
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+// Шрифты
+@font-face {
+	font-family: 'Montserat';
+	src: url("../fonts/montserrat/Montserrat-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserat';
+	src: url("../fonts/montserrat/Montserrat-Bold.otf");
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Montserat';
+	src: url("../fonts/montserrat/Montserrat-Bold.otf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Montserat';
+	src: url("../fonts/montserrat/Montserrat-Thin.otf");
+	font-weight: 100;
+}
+
+// Картинки
+img {
+	display: block;
+	width: 100%;
+}
+
+// Текст
+.title {
+	font-family: Montserat;
+	font-weight: 800;
+	font-size: 34px;
+
+	color: #000;
+// Нормальный
+	&--nm {
+		font-family: Montserat;
+		font-weight: 400;
+		font-size: 14px;
+	}
+// Маленький
+	&--sm {
+		font-family: Montserat;
+		font-weight: 300;
+	}
+// Тонкий
+	&--th {
+		font-family: Montserat;
+		font-weight: 100;
+	}
+// Курсив
+	&--it {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-style: italic;
+	}
+}
+
+// Кнопка
+.btn {
+	padding: 10px 30px;
+
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	transition: background 0.3s linear;
+
+	border: none;
+	color: #fff;
+	background: $blue;
+
+	&:hover {
+		background: $blue-dk;
+	}
+}
+
+// Ссылка
+.link {
+	font-family: Montserat;
+	font-size: 16px;
+	text-decoration: underline;
+
+	color: $blue;
+
+	&:hover {
+		text-decoration: none;
+
+		color: $blue-dk;
+	}
+}

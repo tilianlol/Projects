@@ -1,0 +1,131 @@
+//--------------------------О нас-------------------------------
+.about {
+	position: relative;
+	display: flex;
+	padding-top: 250px;
+
+	background: url('../img/about.png') center no-repeat;
+	background-size: contain;
+
+// Раздел 
+	&__us {
+		position: absolute;
+		top: -10px;
+		left: 25%;
+
+		font-size: 126px;
+		font-family: Montserat;
+		text-transform: uppercase;
+
+		color: #f7f7f7;
+	}
+
+// Основной контент 
+	&__text {
+		width: 45%;
+		margin-top: 100px;
+		padding-top: 50px;
+		padding-right: 80px;
+		display: flex;
+		justify-content: flex-end;
+
+		background: #fff;
+	
+	// Обёртка контента
+		&__wrapper {
+			width: 40%;
+
+		// Заголовок
+			.title--sm {
+				padding-bottom: 10px;
+
+				text-align: center;
+			}
+		// Описание и ссылка
+			.title--nm,
+			.link {
+				padding-bottom: 15px;
+
+				text-align: left;
+			}
+		// *Описание и ссылка
+		}
+	// *Обёртка контента
+	}
+// *Основной контент 
+
+// Видео
+	&__video {
+		position: relative;
+		padding-top: 220px;
+		padding-left: 50px;
+		width: 25%;
+		
+		img {
+			box-shadow: 0 0 20px 1px #222;
+		}
+
+		&__link {
+			position: relative;
+		}
+	// Кнопка плэй
+		.video__btn {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			bottom: 30%;
+			margin-bottom: 50px;
+			margin-left: 120px;
+
+			cursor: pointer;
+
+			text-align: center;
+			font-size: 55px;
+
+			background: none;
+			color: #fff;
+			border: 4px solid #fff;
+			border-radius: 50%;
+
+			&:hover {
+				color: $blue;
+				border-color: $blue;
+			}
+		}
+	// Модальное окно для видео
+		&__modal {
+			display: none;
+	    justify-content: center;
+	    position: fixed;
+	    z-index: 10;
+	    width: 100%;
+	    height: 100vh;
+	    top: 0; left: 0;
+
+	 		background: rgba(10,10,10,.8);
+	
+			iframe {
+				align-self: center;
+			}
+
+			&--active {
+				display: flex;
+			}
+		}
+		.modal__btn {
+			position: absolute;
+			top: 20%;
+			right: 25%;
+
+			font-size: 40px;
+
+			cursor: pointer;
+
+			color: #fff;
+			background: none;
+			border: none;
+		}
+	}
+// *Видео
+}
+//*****************************О нас***********************************
